@@ -26,15 +26,19 @@ android {
     compileSdkVersion 34
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        buildConfig false
     }
 
     defaultConfig {
         minSdkVersion 21
     }
+    
 }
 
 dependencies {
-    implementation "com.squareup.picasso:picasso:2.71828"
+    implementation 'androidx.annotation:annotation:1.7.1'
 }
